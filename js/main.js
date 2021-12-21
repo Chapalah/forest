@@ -59,15 +59,22 @@ function showRoad() {
   const roads = document.querySelectorAll(".roadmap__item");
   let ms = 0;
 
+  console.log('showroad');
+
   roads.forEach((road) => {
     ms += 400;
+    console.log('showroad foreach');
 
     setTimeout(() => {
       road.classList.add("roadmap__item_show");
+      console.log('showroad timeout-1');
+
     }, ms);
  
     setTimeout(() => {
       road.classList.add("roadmap__item_way");
+      console.log('showroad timeout-2');
+
     }, (ms + 600));
   });
 }
