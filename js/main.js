@@ -36,6 +36,8 @@ window.addEventListener(
     isPartiallyVisible(aboutBlock) && showMountain();
 
     isPartiallyVisible(roadmapBlock) && showRoad();
+
+    console.log(isPartiallyVisible(roadmapBlock))
   },
   false
 );
